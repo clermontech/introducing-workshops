@@ -1,0 +1,7 @@
+.sponsors {
+    width: 100%;
+}
+
+.sponsors th, .sponsors td {
+    text-align: center !important;
+}

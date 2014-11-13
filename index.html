@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <title>Introduction Workshop: Git</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/clermontech.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <link rel="stylesheet" href="css/custom.css">
+
+        <!--[if lt IE 9]>
+        <script src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                    <script type="text/template">
+                        <h1>Clermont'ech Workshop: Git</h1>
+
+                        <img src="images/clermontech_mascotte_400px.png" alt="Clermont'ech logo" class="mascotte"/>
+
+                        [@clermontech](https://twitter.com/clermontech)
+
+                        [clermontech.org](http://clermontech.org)
+
+                        `#ClermontGit`
+
+                        <img src="images/noun_project_6036.svg" alt="wifi" />
+                        <div class="ssid">XXXX</div>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Les Workshops
+
+                        <img src="images/icon_8442.svg" alt="workshop" width="300px" class="icon">
+
+                        * Une journée complète
+                        * Des **conférences** et **ateliers**
+                        * Sur réservation (~50 places)
+                    </script>
+                </section>
+                <section>
+                    <h2>Sponsors &hearts;</h2>
+                    <table class="sponsors">
+                        <tr>
+                            <td>
+                                <img src="images/sponsors/agaetis.png" alt="Agaetis Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/openstudio.png" alt="OpenStudio Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/comsource.jpg" alt="`ComSource Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/overscan.png" alt="`Overscan Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/itn.png" alt="ITN Sponsor" width="120px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/sponsors/github.png" alt="Github Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/wisembly.png" alt="Wisembly Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/iut.png" alt="IUT Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/manning.jpg" alt="Manning Sponsor" width="120px" />
+                            </td>
+                            <td>
+                                <img src="images/sponsors/oreilly.gif" alt="Oreilly Sponsor" width="120px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <img src="images/sponsors/ibiseness.png" alt="i-Biseness Sponsor" width="120px"/>
+                            </td>
+                            <td><img src="images/sponsors/human-booster.png" alt="Human Booster Sponsor" width="120px"/></td>
+                            <td>
+                                <img src="images/sponsors/coffreo.png" alt="Coffreo Sponsor" width="120px" />
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ![](images/sponsors/gandi.png)
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ![](images/sponsors/o2switch.png)
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Agenda de la journée
+
+                        <table>
+                            <tr>
+                                <td valign="top">
+                                    <p>10h00</p>
+                                </td>
+                                <td colspan="2">
+                                    <p><strong>Git : De Zéro A Héros</strong> <em>- Amphi Pascalis</em></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <p>12h00</p>
+                                </td>
+                                <td colspan="2">
+                                    <p style="text-align: center; vertical-align: center"><strong>Pause Déjeuner</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><br></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td width="48%" valign="top">
+                                    <em>Amphi Pascalis</em>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <em>Hack Room</em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <p>13h00</p>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <p><strong>Retours d'Expérience</strong></p>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <p><strong>Atelier : Try Git</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <p>15h00</p>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <p><strong>Git, GitHub & Open Source</strong></p>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <p><strong>Atelier : Hooks!</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <p>16h00</p>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <p><strong>Workflows Git</strong></p>
+                                </td>
+                                <td width="48%" valign="top">
+                                    <p><strong>Atelier : Déployer avec Git</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><br></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <p>17h00</p>
+                                </td>
+                                <td colspan="2">
+                                    <p style="text-align: center">
+                                        <strong>Keynote de clôture</strong> <em> - Amphi Pascalis</em>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Twitter & Wisembly
+                        <br>
+
+                        \#ClermontGit
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Now ► Playing
+                        <br>
+
+                        Git : De Zéro à Héros, _Julien Muetton_
+                    </script>
+                </section>
+            </div>
+        </div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.min.js"></script>
+
+        <script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+        </script>
+	</body>
+</html>
